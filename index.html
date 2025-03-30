@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="auhtor" content="Divya Jain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+<div class="calculator">
+    <input type="text" id="display" enabled/>
+    <div id="keypad">
+        <!--NEXT ROW 1-->
+        <button class="button" title="Percentage" onclick="percent()"><title>Percentage</title>%</button>
+        <button class="button" title="Clear Expression" onclick="clearDisplay()"><title>Clear Expression</title>CE</button>
+        <button class="button" title="Negative or positive" onclick="number()"><title>Negative or positive</title>-/+</button>
+        <button class="button" title="Delete" onclick="deleteELement()"><title>Delete</title>&#8592;</button>
+        <!--NEXT ROW 2-->
+        <button class="button" title="1 divide by x" onclick="power(-1)"><title>1 divide by x</title>1/x</button>
+        <button class="button" title="x to the power 2" onclick="power(2)"><title>x to the power 2</title>x<sup>2</sup></button>
+        <button class="button" title="Square root of x" onclick="power(0.5)"><title>Square root to x </title>&radic;x</button>
+        <button class= "button" title="Division" onclick="enterDisplay('/')"><title>Division</title>&divide;</button>
+        <!--NEXT ROW 3-->
+        <button class="button" title="Number 7" onclick="enterDisplay('7') "><title>Number 7</title>7</button>
+        <button class="button" title="Number 8"onclick="enterDisplay('8')"><title>Number 8</title>8</button>
+        <button class="button" title="Number 9" onclick="enterDisplay('9')"><title>Number 9</title>9</button>
+        <button class="button" title="Multiplication" onclick="enterDisplay('*')"><title>Multiplication</title>x</button>
+        <!--NEXT ROW 4-->
+        <button class="button" title="Number 4" onclick="enterDisplay('4')"><title>Number 4</title>4</button>
+        <button class="button" title="Number 5" onclick="enterDisplay('5')"><title>Number 5</title>5</button>
+        <button class="button" title="Number 6" onclick="enterDisplay('6')"><title>Number 6</title>6</button>
+        <button class="button" title="Subtraction" onclick="enterDisplay('-')"><title>Subtraction</title>-</button>
+        <!--NEXT ROW 5-->
+        <button class="button" title="Number 1" onclick="enterDisplay('1')"><title>Number 1</title>1</button>
+        <button class="button" title="Number 2" onclick="enterDisplay('2')"><title>Number 2</title>2</button>
+        <button class="button" title="Number 3" onclick="enterDisplay('3')"><title>Number 3</title>3</button>
+        <button class="button" title="Addition" onclick="enterDisplay('+')"><title>Addition</title>+</button>
+        <!--NEXT ROW 6-->
+        <button class="button" title="Number 0" onclick="enterDisplay('0')"><title>Number 0</title>0</button>
+        <button class="button" title="Decimal point" onclick="enterDisplay('.')"><title>Decimal point</title>.</button>
+        <button class="button" id="eq" title="Result" onclick="calculate()"><title>Result</title>=</button>
+    </div>
+</div>
+ <script src="script.js"></script>
+</body>
+<html>
